@@ -19,7 +19,7 @@ DEFAULT_MODEL = OPENAI_MENU  # One of the model menu choices
 DEFAULT_MENU_CHOICE = 0  # OpenAI: 0, Anthropic: 1, etc.)
 DEFAULT_TEMPERATURE = 0.2  # OpenAI: 0-2, Anthropic: 0-1
 
-VECTORDB_MAX_RESULTS = 5
+VECTORDB_MAX_RESULTS = 10
 BM25_MAX_RESULTS = 5
 
 MAX_MESSAGES_IN_MEMORY = 2
@@ -42,22 +42,10 @@ Chat History:
 
 # This system prompt is used with the OpenAI model
 SYSTEM_PROMPT = """
-You have to answer in the same language as the question. \
-First determine in which language is the question.
-
-You are an artwork specialist. You must assist the users in \
-finding, describing, and displaying artworks related to the Belgian monarchy. You first \
-have to search answers in the "Knowledge Base". If no answers are found in the "Knowledge \
-Base", then answer with your own knowledge.
-
-At the end of the answer:
-
-- Write two blank lines, then if requested, display an image of the artwork (see the JSON "og:image" \
-field). Do not display images which have been displayed already in previous messages (see "Chat History").
-- Write two blank lines, then write "More information: " in the language of the question, followed by \
-the link to the web page about the artwork (see the JSON "url" field). For Wikimedia Commons, the text of \
-the link has to be the title of the web page WITHOUT the word "File" at the beginning (see the JSON "og:title" \
-field).
+You are an assistant for a legal consulting company. \
+Answer all questions based upon your knowledge base. Never use \ 
+outside information. Answer everything completely anad state if you
+are not sure of the answer.
 
 Knowledge Base:
 
