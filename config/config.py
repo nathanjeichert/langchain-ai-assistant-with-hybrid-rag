@@ -95,11 +95,11 @@ Chat History:
 
 LOGO_PATH = "./images/image.jpg"
 ASSISTANT_ICON = "👑"
-ASSISTANT_NAME = "Belgian Monarchy Artworks Explorer"
+ASSISTANT_NAME = "Verdict AI"
 
-HELLO_MESSAGE = "Hello! Bonjour! Hallo! 👋"
-NEW_CHAT_MESSAGE = "New chat / Nouvelle conversation / Nieuw gesprek"
-USER_PROMPT = "Enter your question / Entrez votre question / Voer uw vraag in"
+HELLO_MESSAGE = "Hello!"
+NEW_CHAT_MESSAGE = "New chat"
+USER_PROMPT = "Enter your question"
 
 ABOUT_TEXT = """
 ### About this assistant
