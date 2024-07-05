@@ -27,7 +27,7 @@ MAX_MESSAGES_IN_MEMORY = 2
 OLLAMA_URL = "http://myvm1.edocloud.be:11434"  # "http://35.209.146.25" / "http://localhost:11434" 
 
 CHROMA_SERVER = True
-CHROMA_SERVER_HOST = "http://localhost/"
+CHROMA_SERVER_HOST = "http://0.0.0.0"
 CHROMA_SERVER_PORT = "8000"
 CHROMA_COLLECTION_NAME = "my_collection"  # Name of the collection in the vector DB
 
